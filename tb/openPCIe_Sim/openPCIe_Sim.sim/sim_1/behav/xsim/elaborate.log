@@ -1,0 +1,265 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/C/research/tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot board_behav xil_defaultlib.board xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 21 for port 'ltssm_debug_state' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:424]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/data_handler.sv:448]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'lane_number' [/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/phy_receive.sv:145]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'lane_number' [/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/phy_transmit.sv:152]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 20 for port 'ltssm_state_o' [/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/pcie_phy_top.sv:301]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 'seq_num_o' [/tools/C/research/pcie/copy-pcie/src/dllp/dllp_transmit.sv:185]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 3 for port 's_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv:631]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 3 for port 'm_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv:639]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 3 for port 's_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv:667]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 3 for port 'm_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv:675]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 3 for port 's_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv:705]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 3 for port 'm_axis_tuser' [/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv:713]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 's_axil_awaddr' [/tools/C/research/pcie/copy-pcie/src/pcie_cfg/pcie_cfg_wrapper.sv:247]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 's_axil_araddr' [/tools/C/research/pcie/copy-pcie/src/pcie_cfg/pcie_cfg_wrapper.sv:258]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 's_axis_tx_tuser' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:582]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 22 for port 'm_axis_rx_tuser' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:592]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'PIPE_RATE' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:901]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PIPE_TXSWING' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:904]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:375]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:543]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:545]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PLL0PD' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:683]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PLL1PD' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:684]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PLL0RESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:686]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PLL1RESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:687]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DRPCLK' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:689]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'DRPADDR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:690]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DRPEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:691]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'DRPDI' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:692]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DRPWE' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:693]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'TXSYSCLKSEL' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:989]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'RXSYSCLKSEL' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:990]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RESETOVRD' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1008]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXINHIBIT' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1043]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'TXPRECURSOR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1046]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 7 for port 'TXMAINCURSOR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1048]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'TXPOSTCURSOR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1049]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DRPCLK' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1067]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'DRPADDR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1068]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DRPEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1069]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'DRPDI' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1070]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXPMARESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1076]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXPMARESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1077]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXPCSRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1096]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXPCSRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1097]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXCDRRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1102]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXCDRFREQRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1104]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EYESCANRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1135]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXBUFRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1145]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXPHDLYRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1150]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXPHALIGNEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1153]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXDLYBYPASS' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1157]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXSYNCMODE' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1173]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXSYNCIN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1174]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXSYNCALLIN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXPHALIGNEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1183]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXDLYBYPASS' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXDLYSRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1187]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXDLYEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1188]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXDDIEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1190]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXSYNCALLIN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1199]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXSLIDE' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1207]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXCHBONDEN' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1213]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'RXCHBONDI' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1214]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'RXCHBONDLEVEL' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1215]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXCHBONDMASTER' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1216]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXCHBONDSLAVE' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1217]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'TXPRBSSEL' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1242]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'RXPRBSSEL' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1243]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXPRBSFORCEERR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1244]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXPRBSCNTRESET' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1245]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'LOOPBACK' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1246]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DMONITORCLK' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:1265]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'refclk_sel_i' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:820]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 1 for port 'pclk_sel_i' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:821]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'pipeclk_en_i' [/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v:822]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 7 for port 'DADDR' [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/xilinx_pcie_mmcm.v:156]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 128 for port 'TRNTD' [/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pcie_2_1_rport_7x.v:14564]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'TRNTREM' [/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pcie_2_1_rport_7x.v:14565]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 32 for port 'data' [/tools/C/research/pcie/copy-pcie/src/dllp/dllp2tlp.sv:641]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/board.v" Line 63. Module board has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v" Line 1. Module pcie_top_gtp_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2022.1/rdi_builds/continuous/2022_04_18_3526262/data/verilog/src/unisims/IBUFDS.v" Line 32. Module IBUFDS has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/pcie_phy_top.sv" Line 2. Module pcie_phy_top(STRB_WIDTH=4,KEEP_WIDTH=4) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/phy_receive.sv" Line 1. Module phy_receive(MAX_NUM_LANES=1,STRB_WIDTH=4,KEEP_WIDTH=4) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/scrambler/scrambler.sv" Line 1. Module scrambler has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_async_fifo.v" Line 34. Module axis_async_fifo(DEPTH=20,DATA_WIDTH=32,KEEP_ENABLE=1,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/pcie_phy_core/phy_transmit.sv" Line 2. Module phy_transmit(MAX_NUM_LANES=1,STRB_WIDTH=4,KEEP_WIDTH=4) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_fifo.v" Line 34. Module axis_fifo(DEPTH=512,DATA_WIDTH=32,KEEP_ENABLE=1'b1,KEEP_WIDTH=4,USER_ENABLE=1'b1,USER_WIDTH=5,FRAME_FIFO=1,DROP_BAD_FRAME=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/scrambler/scrambler.sv" Line 1. Module scrambler has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_async_fifo.v" Line 34. Module axis_async_fifo(DEPTH=20,DATA_WIDTH=32,KEEP_ENABLE=1,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_async_fifo.v" Line 34. Module axis_async_fifo(DEPTH=20,DATA_WIDTH=32,KEEP_ENABLE=1,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/ltssm/pcie_ltssm_downstream.sv" Line 9. Module pcie_ltssm_downstream(MAX_NUM_LANES=1,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/dllp/pcie_datalink_layer.sv" Line 15. Module pcie_datalink_layer(STRB_WIDTH=4,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/dllp/pcie_flow_ctrl_init.sv" Line 2. Module pcie_flow_ctrl_init(STRB_WIDTH=4,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/dllp/retry_management.sv" Line 6. Module retry_management(STRB_WIDTH=4,KEEP_WIDTH=4,USER_WIDTH=5,RAM_ADDR_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/dllp/retry_transmit.sv" Line 4. Module retry_transmit(STRB_WIDTH=4,KEEP_WIDTH=4,USER_WIDTH=5,S_COUNT=2,RAM_ADDR_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/dllp/tlp2dllp.sv" Line 5. Module tlp2dllp(USER_WIDTH=5,S_COUNT=2,MAX_PAYLOAD_SIZE=256,KEEP_WIDTH=4,RAM_DATA_WIDTH=32,RAM_ADDR_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=3) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=3) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=3) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_lcrc16.sv" Line 1. Module pcie_lcrc16 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_lcrc32.sv" Line 27. Module pcie_lcrc32 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_arb_mux.v" Line 34. Module axis_arb_mux(S_COUNT=2,DATA_WIDTH=32,KEEP_WIDTH=4,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/arbiter.v" Line 34. Module arbiter(PORTS=2,ARB_BLOCK=1,ARB_LSB_HIGH_PRIORITY=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/priority_encoder.v" Line 34. Module priority_encoder(WIDTH=2,LSB_HIGH_PRIORITY=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/priority_encoder.v" Line 34. Module priority_encoder(WIDTH=2,LSB_HIGH_PRIORITY=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" Line 34. Module axis_register(DATA_WIDTH=32,KEEP_WIDTH=4,ID_WIDTH=1,DEST_WIDTH=1,USER_WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" Line 1. Module pcie_dllp_crc8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_fifo.v" Line 34. Module axis_fifo(DEPTH=768,DATA_WIDTH=32,KEEP_ENABLE=1'b1,KEEP_WIDTH=4,USER_ENABLE=1'b1,USER_WIDTH=5,FRAME_FIFO=1,DROP_BAD_FRAME=1) has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [XSIM 43-4328] File: /tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pci_exp_usrapp_tx.v Line: 1670 : Sensitivity on input argument "timeout" of task "TSK_SIMULATION_TIMEOUT" may never get triggered.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.pcie_phy_pkg
+Compiling package xil_defaultlib.pcie_datalink_pkg
+Compiling package xil_defaultlib.pcie_config_reg_pkg
+Compiling package xil_defaultlib.pcie_tlp_pkg
+Compiling module unisims_ver.IBUFDS
+Compiling module xil_defaultlib.gen3_byte_scramble
+Compiling module xil_defaultlib.gen3_scramble_default
+Compiling module xil_defaultlib.byte_scramble
+Compiling module xil_defaultlib.gen1_scramble_default
+Compiling module xil_defaultlib.scrambler
+Compiling module xil_defaultlib.ordered_set_handler(KEEP_WIDTH=4...
+Compiling module xil_defaultlib.block_alignment(MAX_NUM_LANES=1)
+Compiling module xil_defaultlib.pack_data(MAX_NUM_LANES=1)
+Compiling module xil_defaultlib.axis_register(DATA_WIDTH=32,KEEP...
+Compiling module xil_defaultlib.data_handler(STRB_WIDTH=4,KEEP_W...
+Compiling module xil_defaultlib.axis_async_fifo(DEPTH=20,DATA_WI...
+Compiling module xil_defaultlib.phy_receive(MAX_NUM_LANES=1,STRB...
+Compiling module xil_defaultlib.axis_fifo(DEPTH=512,DATA_WIDTH=3...
+Compiling module xil_defaultlib.frame_symbols(USER_WIDTH=5,KEEP_...
+Compiling module xil_defaultlib.lane_management(STRB_WIDTH=4,KEE...
+Compiling module xil_defaultlib.os_generator(MAX_NUM_LANES=1,KEE...
+Compiling module xil_defaultlib.phy_transmit(MAX_NUM_LANES=1,STR...
+Compiling module xil_defaultlib.pcie_ltssm_downstream(MAX_NUM_LA...
+Compiling module xil_defaultlib.pcie_datalink_init
+Compiling module xil_defaultlib.pcie_dllp_crc8
+Compiling module xil_defaultlib.pcie_datalink_crc
+Compiling module xil_defaultlib.pcie_flow_ctrl_init(STRB_WIDTH=4...
+Compiling module xil_defaultlib.retry_management(STRB_WIDTH=4,KE...
+Compiling module xil_defaultlib.axis_retry_fifo(STRB_WIDTH=4,KEE...
+Compiling module xil_defaultlib.retry_transmit(STRB_WIDTH=4,KEEP...
+Compiling module xil_defaultlib.axis_register(DATA_WIDTH=32,KEEP...
+Compiling module xil_defaultlib.pcie_lcrc16
+Compiling module xil_defaultlib.pcie_lcrc32
+Compiling module xil_defaultlib.tlp2dllp(USER_WIDTH=5,S_COUNT=2,...
+Compiling module xil_defaultlib.priority_encoder(WIDTH=2,LSB_HIG...
+Compiling module xil_defaultlib.arbiter(PORTS=2,ARB_BLOCK=1,ARB_...
+Compiling module xil_defaultlib.axis_arb_mux(S_COUNT=2,DATA_WIDT...
+Compiling module xil_defaultlib.dllp_transmit(STRB_WIDTH=4,KEEP_...
+Compiling module xil_defaultlib.axis_user_demux(STRB_WIDTH=4,KEE...
+Compiling module xil_defaultlib.dllp_handler(STRB_WIDTH=4,KEEP_W...
+Compiling module xil_defaultlib.dllp_fc_update(STRB_WIDTH=4,KEEP...
+Compiling module xil_defaultlib.axis_fifo(DEPTH=768,DATA_WIDTH=3...
+Compiling module xil_defaultlib.dllp2tlp(STRB_WIDTH=4,KEEP_WIDTH...
+Compiling module xil_defaultlib.pcie_config_decode(STRB_WIDTH=4,...
+Compiling module xil_defaultlib.pcie_config_mux(STRB_WIDTH=4,KEE...
+Compiling module xil_defaultlib.pcie_config_handler(STRB_WIDTH=4...
+Compiling module xil_defaultlib.pcie_config_reg
+Compiling module xil_defaultlib.pcie_cfg_wrapper(STRB_WIDTH=4,KE...
+Compiling module xil_defaultlib.dllp_receive(STRB_WIDTH=4,KEEP_W...
+Compiling module xil_defaultlib.priority_encoder(WIDTH=3,LSB_HIG...
+Compiling module xil_defaultlib.arbiter(PORTS=3,ARB_BLOCK=1,ARB_...
+Compiling module xil_defaultlib.axis_arb_mux(S_COUNT=3,DATA_WIDT...
+Compiling module xil_defaultlib.pcie_datalink_layer(STRB_WIDTH=4...
+Compiling module xil_defaultlib.pcie_phy_top(STRB_WIDTH=4,KEEP_W...
+Compiling module xil_defaultlib.axis_register(DATA_WIDTH=64,KEEP...
+Compiling module xil_defaultlib.axis_adapter(S_DATA_WIDTH=64,S_K...
+Compiling module xil_defaultlib.axis_adapter(S_DATA_WIDTH=32,S_K...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.EP_MEM
+Compiling module xil_defaultlib.PIO_EP_MEM_ACCESS
+Compiling module xil_defaultlib.PIO_RX_ENGINE(KEEP_WIDTH=8)
+Compiling module xil_defaultlib.PIO_TX_ENGINE(KEEP_WIDTH=8)
+Compiling module xil_defaultlib.PIO_EP(KEEP_WIDTH=8)
+Compiling module xil_defaultlib.PIO_TO_CTRL
+Compiling module xil_defaultlib.PIO(KEEP_WIDTH=8)
+Compiling module xil_defaultlib.pcie_app_7x_default
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFGCTRL
+Compiling module unisims_ver.BUFGCE
+Compiling module xil_defaultlib.xilinx_pci_mmcm(PCIE_LINK_SPEED=...
+Compiling module xil_defaultlib.two_beats
+Compiling module unisims_ver.GTPE2_COMMON(BIAS_CFG=64'b010100...
+Compiling module unisims_ver.GTPE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.pipe_wrapper(PCIE_GT_DEVICE="GTX...
+Compiling module xil_defaultlib.pcie_top_gtp_default
+Compiling module xil_defaultlib.rp_axi_basic_rx_pipeline(C_DATA_...
+Compiling module xil_defaultlib.rp_axi_basic_rx_null_gen(C_DATA_...
+Compiling module xil_defaultlib.rp_axi_basic_rx(C_DATA_WIDTH=64,...
+Compiling module xil_defaultlib.rp_axi_basic_tx_pipeline(C_DATA_...
+Compiling module xil_defaultlib.rp_axi_basic_tx_thrtl_ctl(C_DATA...
+Compiling module xil_defaultlib.rp_axi_basic_tx(C_DATA_WIDTH=64,...
+Compiling module xil_defaultlib.rp_axi_basic_top(C_DATA_WIDTH=64...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOB_REG=1,REA...
+Compiling module unisims_ver.RAMB36E1(DOB_REG=1,READ_WIDTH_A=...
+Compiling module xil_defaultlib.rp_BRAM_TDP_MACRO(BRAM_SIZE="36K...
+Compiling module xil_defaultlib.rp_pcie_bram_7x(LINK_CAP_MAX_LIN...
+Compiling module xil_defaultlib.rp_pcie_brams_7x(LINK_CAP_MAX_LI...
+Compiling module xil_defaultlib.rp_pcie_bram_top_7x(DEV_CAP_MAX_...
+Compiling module unisims_ver.PCIE_2_1(AER_BASE_PTR=12'b010010...
+Compiling module xil_defaultlib.rp_pcie_7x(AER_BASE_PTR=12'b0100...
+Compiling module xil_defaultlib.rp_pcie_pipe_misc_default
+Compiling module xil_defaultlib.rp_pcie_pipe_lane_default
+Compiling module xil_defaultlib.rp_pcie_pipe_pipeline(LINK_CAP_M...
+Compiling module xil_defaultlib.rp_pcie_top(AER_BASE_PTR=12'b010...
+Compiling module xil_defaultlib.rp_gt_rx_valid_filter_7x
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module xil_defaultlib.rp_pipe_clock(PCIE_LANE=6'b01,PC...
+Compiling module xil_defaultlib.rp_pipe_reset(PCIE_SIM_SPEEDUP="...
+Compiling module xil_defaultlib.rp_pipe_user_default
+Compiling module xil_defaultlib.rp_pipe_rate(PCIE_SIM_SPEEDUP="T...
+Compiling module xil_defaultlib.rp_pipe_sync(PCIE_LANE=6'b01,PCI...
+Compiling module xil_defaultlib.rp_pipe_drp_default
+Compiling module xil_defaultlib.rp_gtx_cpllpd_ovrd
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.rp_gt_wrapper(PCIE_SIM_MODE="TRU...
+Compiling module xil_defaultlib.rp_pipe_wrapper(PCIE_SIM_MODE="T...
+Compiling module xil_defaultlib.rp_gt_top(LINK_CAP_MAX_LINK_WIDT...
+Compiling module xil_defaultlib.pcie_2_1_rport_7x(LINK_CAP_MAX_L...
+Compiling module xil_defaultlib.pci_exp_usrapp_rx_default
+Compiling module xil_defaultlib.pci_exp_usrapp_tx
+Compiling module xil_defaultlib.pci_exp_usrapp_cfg
+Compiling module xil_defaultlib.pci_exp_usrapp_com
+Compiling module xil_defaultlib.pci_exp_usrapp_pl
+Compiling module xil_defaultlib.pcie_axi_trn_bridge_default
+Compiling module xil_defaultlib.xilinx_pcie_2_1_rport_7x(PL_FAST...
+Compiling module xil_defaultlib.sys_clk_gen(halfcycle=5000)
+Compiling module xil_defaultlib.sys_clk_gen_ds(halfcycle=5000)
+Compiling module xil_defaultlib.board
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot board_behav

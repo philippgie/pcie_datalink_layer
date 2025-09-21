@@ -1,0 +1,101 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/EP_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EP_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/PIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/PIO_EP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIO_EP
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/PIO_EP_MEM_ACCESS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIO_EP_MEM_ACCESS
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/PIO_RX_ENGINE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIO_RX_ENGINE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/PIO_TO_CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIO_TO_CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/PIO_TX_ENGINE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIO_TX_ENGINE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_adapter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_adapter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_async_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_async_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/axis_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pci_exp_usrapp_cfg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pci_exp_usrapp_cfg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pci_exp_usrapp_com.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pci_exp_usrapp_com
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pci_exp_usrapp_pl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pci_exp_usrapp_pl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pci_exp_usrapp_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pci_exp_usrapp_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pci_exp_usrapp_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pci_exp_usrapp_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pcie_2_1_rport_7x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcie_2_1_rport_7x
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_rx_null_gen
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_rx_pipeline
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_rx
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_top
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_tx_pipeline
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_tx_thrtl_ctl
+INFO: [VRFC 10-311] analyzing module rp_axi_basic_tx
+INFO: [VRFC 10-311] analyzing module rp_core_top
+INFO: [VRFC 10-311] analyzing module rp_gt_common
+INFO: [VRFC 10-311] analyzing module rp_gtp_cpllpd_ovrd
+INFO: [VRFC 10-311] analyzing module rp_gtp_pipe_drp
+INFO: [VRFC 10-311] analyzing module rp_gtp_pipe_rate
+INFO: [VRFC 10-311] analyzing module rp_gtp_pipe_reset
+INFO: [VRFC 10-311] analyzing module rp_gt_rx_valid_filter_7x
+INFO: [VRFC 10-311] analyzing module rp_gt_top
+INFO: [VRFC 10-311] analyzing module rp_gt_wrapper
+INFO: [VRFC 10-311] analyzing module rp_gtx_cpllpd_ovrd
+INFO: [VRFC 10-311] analyzing module rp_pcie2_top
+INFO: [VRFC 10-311] analyzing module rp_pcie_7x
+INFO: [VRFC 10-311] analyzing module rp_pcie_bram_7x
+INFO: [VRFC 10-311] analyzing module rp_pcie_brams_7x
+INFO: [VRFC 10-311] analyzing module rp_pcie_bram_top_7x
+INFO: [VRFC 10-311] analyzing module rp_pcie_pipe_lane
+INFO: [VRFC 10-311] analyzing module rp_pcie_pipe_misc
+INFO: [VRFC 10-311] analyzing module rp_pcie_pipe_pipeline
+INFO: [VRFC 10-311] analyzing module rp_pcie_top
+INFO: [VRFC 10-311] analyzing module rp_pipe_clock
+INFO: [VRFC 10-311] analyzing module rp_pipe_drp
+INFO: [VRFC 10-311] analyzing module rp_pipe_eq
+INFO: [VRFC 10-311] analyzing module rp_pipe_rate
+INFO: [VRFC 10-311] analyzing module rp_pipe_reset
+INFO: [VRFC 10-311] analyzing module rp_pipe_sync
+INFO: [VRFC 10-311] analyzing module rp_pipe_user
+INFO: [VRFC 10-311] analyzing module rp_pipe_wrapper
+INFO: [VRFC 10-311] analyzing module rp_qpll_drp
+INFO: [VRFC 10-311] analyzing module rp_qpll_reset
+INFO: [VRFC 10-311] analyzing module rp_qpll_wrapper
+INFO: [VRFC 10-311] analyzing module rp_rxeq_scan
+INFO: [VRFC 10-311] analyzing module rp_BRAM_SDP_MACRO
+INFO: [VRFC 10-311] analyzing module rp_BRAM_TDP_MACRO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pcie_app_7x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcie_app_7x
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/pcie_axi_trn_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcie_axi_trn_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/crc/pcie_dllp_crc8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcie_dllp_crc8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/example/pcie_top_gtp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcie_top_gtp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_wrapper
+WARNING: [VRFC 10-2938] 'gt_txresetdone_reg' is already implicitly declared on line 349 [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:563]
+WARNING: [VRFC 10-2938] 'gt_rxresetdone_reg' is already implicitly declared on line 349 [/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/pipe_wrapper.v:564]
+INFO: [VRFC 10-311] analyzing module two_beats
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/src/verilog-axis/rtl/priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/sys_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/sys_clk_gen_ds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk_gen_ds
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/tb/vivado_sim/pcie_7x_0_ex/pcie_7x_0_ex/imports/xilinx_pcie_2_1_rport_7x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_pcie_2_1_rport_7x
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/C/research/pcie/copy-pcie/example/pcie_pipe_wrapper/xilinx_pcie_mmcm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_pci_mmcm
