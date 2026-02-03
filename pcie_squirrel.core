@@ -1,0 +1,82 @@
+CAPI=2:
+name: fusesoc:pcie:pcie_squirrel:1.0.0
+description: PCIe Endpoint for LambdaConcept PCIe Squirrel (XC7A35T-FGG484)
+
+filesets:
+  rtl:
+    files:
+      - src/pcie_phy_core/pcie_phy_top.sv
+      - example/pcie_cfg_top.sv
+      - example/pcie_top_squirrel.v
+    file_type: systemVerilogSource
+    depend:
+      - fusesoc:pcie:packages
+      - fusesoc:pcie:crc
+      - fusesoc:pcie:bram
+      - fusesoc:pcie:axis
+      - fusesoc:pcie:ltssm
+      - fusesoc:pcie:dllp_core
+      - fusesoc:pcie:phy_receive
+      - fusesoc:pcie:phy_transmit
+      - fusesoc:pcie:converters
+      - fusesoc:pcie:pcie_config
+      - fusesoc:pcie:pipe_wrapper
+
+  glbl:
+    files:
+      - example/imports/pcie_7x_0_pipe_clock.v
+      - tb/vivado_sim/glbl.v
+    file_type: systemVerilogSource
+
+  xsim_tb:
+    files:
+      - example/imports/board.vhd
+      - example/imports/EP_MEM.vhd
+      - example/imports/pci_exp_usrapp_cfg.vhd
+      - example/imports/pci_exp_usrapp_pl.vhd
+      - example/imports/pci_exp_usrapp_rx.vhd
+      - example/imports/pci_exp_usrapp_tx.vhd
+      - example/imports/pcie_2_1_rport_7x.vhd
+      - example/imports/pcie_7x_0_support.vhd
+      - example/imports/pcie_app_7x.vhd
+      - example/imports/pcie_axi_trn_bridge.vhd
+      - example/imports/PIO_EP_MEM_ACCESS.vhd
+      - example/imports/PIO_EP.vhd
+      - example/imports/PIO_RX_ENGINE.vhd
+      - example/imports/PIO_TO_CTRL.vhd
+      - example/imports/PIO_TX_ENGINE.vhd
+      - example/imports/PIO.vhd
+      - example/imports/sys_clk_gen_ds.vhd
+      - example/imports/sys_clk_gen.vhd
+      - example/imports/test_interface.vhd
+      - example/imports/tests.vhd
+      - example/imports/xilinx_pcie_2_1_ep_7x.vhd
+      - example/imports/xilinx_pcie_2_1_rport_7x.vhd
+    file_type: vhdlSource
+
+  synth:
+    files:
+      - example/squirrel.xdc : {file_type : xdc}
+
+targets:
+  default:
+    flow: sim
+    flow_options:
+      tool : icarus
+      iverilog_options:
+        - -g2012 -DCOCOTB_SIM
+      timescale: 1ns/1ns
+    filesets : [rtl]
+    toplevel : [pcie_top_squirrel]
+
+  synth:
+    default_tool : vivado
+    filesets : [rtl, synth, xsim_tb, glbl]
+    tools:
+      vivado:
+        part : xc7a35tfgg484-2
+    toplevel : pcie_top_squirrel
+
+scripts:
+  iceprog:
+    cmd : [MODULE=pcie_top]
