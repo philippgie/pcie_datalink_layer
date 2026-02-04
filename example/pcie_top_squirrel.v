@@ -112,9 +112,9 @@ module pcie_top_squirrel #(
   localparam STRB_WIDTH = DATA_WIDTH / 8;
   localparam KEEP_WIDTH = STRB_WIDTH;
   localparam USER_WIDTH = 5;
-  localparam IS_ROOT_PORT = 1;
+  localparam IS_ROOT_PORT = 0;  // 0 = Endpoint, 1 = Root Port (we are an endpoint device)
   localparam LINK_NUM = 0;
-  localparam IS_UPSTREAM = 0;
+  localparam IS_UPSTREAM = 0;   // Endpoint is downstream-facing
   localparam CROSSLINK_EN = 0;
   localparam UPCONFIG_EN = 0;
 
