@@ -12,21 +12,28 @@
 
 ################################################################################
 # PCIe Reference Clock (100MHz Differential from M.2 Slot)
-# Using Bank 35 SRCC pins for clock input
-# H3 = IO_L11P_T1_SRCC_35 (positive), G3 = IO_L11N_T1_SRCC_35 (negative)
+# F6/E6 are dedicated MGTREFCLK pins for the GTP transceiver quad
+# No IOSTANDARD needed - these are dedicated transceiver pins
 ################################################################################
-set_property PACKAGE_PIN H3 [get_ports sys_clk_p]
-set_property PACKAGE_PIN G3 [get_ports sys_clk_n]
-set_property IOSTANDARD LVDS_25 [get_ports {sys_clk_p sys_clk_n}]
+set_property PACKAGE_PIN F6 [get_ports sys_clk_p]
+set_property PACKAGE_PIN E6 [get_ports sys_clk_n]
 
 # Clock constraint for 100MHz PCIe reference clock
 create_clock -name sys_clk_p -period 10.0 [get_ports sys_clk_p]
 
 ################################################################################
+# Fabric System Clock (100MHz from on-board oscillator)
+# H4 is a single-ended LVCMOS33 clock for general fabric use
+################################################################################
+set_property PACKAGE_PIN H4 [get_ports sys_clk_fabric]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk_fabric]
+create_clock -name sys_clk_fabric -period 10.0 [get_ports sys_clk_fabric]
+
+################################################################################
 # IBUFDS_GTE2 Location Constraint
 # Must be in the same quad as the GTP transceiver (X0Y2)
 ################################################################################
-#set_property LOC IBUFDS_GTE2_X0Y2 [get_cells refclk_ibuf]
+set_property LOC IBUFDS_GTE2_X0Y1 [get_cells refclk_ibuf]
 
 ################################################################################
 # GTP Transceiver Location

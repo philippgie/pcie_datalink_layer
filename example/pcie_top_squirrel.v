@@ -70,26 +70,39 @@ module pcie_top_squirrel #(
     input sys_clk_p,
     input sys_clk_n,
 
+    // Fabric system clock (100MHz from on-board oscillator at H4)
+    // Used for LED blink and other fabric logic
+    input sys_clk_fabric,
+
     // PCIe Reset (active low) from M.2 slot PERST# signal
     input sys_rst_n
 );
 
   // Internal clock signal from IBUFDS_GTE2
-  wire sys_clk;
-  //wire sys_clk_gt;  // Direct output for GTP (not used in this design)
+  wire sys_clk;        // PCIe reference clock (from IBUFDS_GTE2, not routable to fabric)
+  wire sys_clk_gt;     // Buffered fabric clock for general use
 
   //----------------------------------------------------------------------------
   // PCIe Reference Clock Buffer (IBUFDS_GTE2 for GTP transceiver)
   // F6/E6 are dedicated MGTREFCLK pins on the Squirrel board
   // IBUFDS_GTE2 provides low-jitter clock for the GTP PLL
   //----------------------------------------------------------------------------
-  //IBUFDS_GTE2 #(
-  IBUFDS IBUFDS (
-      .I    (sys_clk_p),      // Differential clock positive
-      .IB   (sys_clk_n),      // Differential clock negative
-      .O    (sys_clk)     // Reference clock for GTP (not routable)
+  IBUFDS_GTE2 refclk_ibuf (
+      .O     (sys_clk),       // Reference clock for GTP transceiver (not routable)
+      .ODIV2 (),              // Divided clock output (unused)
+      .I     (sys_clk_p),     // Differential clock positive
+      .CEB   (1'b0),          // Clock enable (active low)
+      .IB    (sys_clk_n)      // Differential clock negative
   );
-  //  IBUFDS_GTE2 refclk_ibuf (.O(sys_clk), .ODIV2(), .I(sys_clk_p), .CEB(1'b0), .IB(sys_clk_n));
+
+  //----------------------------------------------------------------------------
+  // Fabric Clock Buffer (for LED blink and other fabric logic)
+  // Uses the on-board 100MHz oscillator at H4
+  //----------------------------------------------------------------------------
+  BUFG fabric_clk_buf (
+      .I (sys_clk_fabric),
+      .O (sys_clk_gt)
+  );
 
   // Parameters
   localparam CLK_RATE = 100;
@@ -307,10 +320,11 @@ module pcie_top_squirrel #(
   assign led_0 = link_up;           // LED0: Link up indicator
 
   // LED1: 1 Hz blink (100 MHz / 50,000,000 = 2 Hz toggle = 1 Hz blink)
+  // Uses fabric clock (sys_clk_gt) from on-board oscillator, NOT PCIe refclk
   reg [25:0] led_counter;
   reg        led_1_reg;
 
-  always @(posedge sys_clk or negedge sys_rst_n) begin
+  always @(posedge sys_clk_gt or negedge sys_rst_n) begin
     if (!sys_rst_n) begin
       led_counter <= 26'd0;
       led_1_reg <= 1'b0;
@@ -351,7 +365,7 @@ module pcie_top_squirrel #(
       .CROSSLINK_EN (CROSSLINK_EN),
       .UPCONFIG_EN  (UPCONFIG_EN)
   ) pcie_phy_top_inst (
-      .clk_i            (sys_clk),
+      .clk_i            (sys_clk_gt),
       .rst_i            (!sys_rst_n),
       .en_i             (1'b1),
       .pipe_rx_usr_clk_i(PIPE_RXUSRCLK_IN),
@@ -447,7 +461,7 @@ module pcie_top_squirrel #(
       .USER_WIDTH (USER_WIDTH),
       .REG_TYPE   (2)
   ) app_rx_pipeline_inst (
-      .clk          (sys_clk),
+      .clk          (sys_clk_gt),
       .rst          (!sys_rst_n),
       .s_axis_tdata (s_app_axis_tdata),
       .s_axis_tkeep (s_app_axis_tkeep),
@@ -484,7 +498,7 @@ module pcie_top_squirrel #(
       .USER_ENABLE  (1'b1),
       .USER_WIDTH   (USER_WIDTH)
   ) axis_app_rx_inst (
-      .clk(sys_clk),
+      .clk(sys_clk_gt),
       .rst(!sys_rst_n),
       .s_axis_tdata (s_app_reg_axis_tdata),
       .s_axis_tkeep (s_app_reg_axis_tkeep),
@@ -521,7 +535,7 @@ module pcie_top_squirrel #(
       .USER_ENABLE  (1'b1),
       .USER_WIDTH   (USER_WIDTH)
   ) axis_app_tx_inst (
-      .clk(sys_clk),
+      .clk(sys_clk_gt),
       .rst(!sys_rst_n),
       .s_axis_tdata (m_tlp_axis_byte_swap_tdata),
       .s_axis_tkeep (m_tlp_axis_tkeep),
@@ -549,7 +563,7 @@ module pcie_top_squirrel #(
       .TCQ(1)
   ) app (
       // AXI-S Interface
-      .user_clk        (sys_clk),
+      .user_clk        (sys_clk_gt),
       .user_reset      (!sys_rst_n),
       .user_lnk_up     (link_up),
       // Tx
@@ -688,6 +702,8 @@ module pcie_top_squirrel #(
   wire        reset_high;
   wire        gt_clk;
 
+  // Note: This MMCM uses the fabric clock (sys_clk_gt) as input
+  // The GTP reference clock (sys_clk from IBUFDS_GTE2) goes directly to GTPE2_COMMON
   MMCME2_ADV #(
       .BANDWIDTH           ("OPTIMIZED"),
       .CLKOUT4_CASCADE     ("FALSE"),
@@ -717,9 +733,9 @@ module pcie_top_squirrel #(
       .CLKOUT4     (clkout4_unused),
       .CLKOUT5     (clkout5_unused),
       .CLKOUT6     (clkout6_unused),
-      // Input clock control
+      // Input clock control - uses fabric clock, NOT PCIe refclk
       .CLKFBIN     (clkfbout_buf_clk_wiz_0),
-      .CLKIN1      (sys_clk),
+      .CLKIN1      (sys_clk_gt),
       .CLKIN2      (1'b0),
       // Tied to always select the primary input clock
       .CLKINSEL    (1'b1),
@@ -794,7 +810,7 @@ module pcie_top_squirrel #(
   // PIPE Wrapper (Contains GTPE2_COMMON and GTPE2_CHANNEL)
   //----------------------------------------------------------------------------
   pipe_wrapper #(
-      .PCIE_SIM_MODE             ("FALSE"), // TODO 
+      .PCIE_SIM_MODE             ("FALSE"), // TODO
       // synthesis translate_off
       .PCIE_SIM_SPEEDUP          ("TRUE"),
       // synthesis translate_on
@@ -827,7 +843,8 @@ module pcie_top_squirrel #(
       .PCIE_USERCLK2_FREQ        (USERCLK2_FREQ + 1)
   ) pipe_wrapper_i (
       // PIPE Clock & Reset Ports
-      .PIPE_CLK    (gt_clk),
+      // sys_clk comes directly from IBUFDS_GTE2 - must NOT go through fabric
+      .PIPE_CLK    (sys_clk),
       .PIPE_RESET_N(sys_rst_n),
       // PIPE TX Data Ports
       .PIPE_TXDATA (phy_txdata),
